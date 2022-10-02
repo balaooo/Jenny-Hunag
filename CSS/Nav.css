@@ -1,0 +1,52 @@
+.nav-container{
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.nav-left{
+    width: 56px;
+    height: 56px;
+    z-index: 1100;
+}
+
+.nav-right{
+    position: relative;
+    z-index: 1100;
+}
+
+
+.nav-left>img{
+    width: 80%;
+}
+
+
+.nav-right p{
+    font-size: 16px;
+    font-family: 'Yeseva One', cursive;
+    z-index: 1100;
+    position: relative;
+}
+
+.nav-right i{
+    font-size: 20px;
+    background-color: transparent;
+}
+
+
+.nav-right p:hover{
+    color: #969696;
+}
+
+.nav-right i:hover{
+    color: #969696;
+}
+
+
+
+

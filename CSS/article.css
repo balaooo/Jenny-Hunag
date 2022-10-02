@@ -1,0 +1,229 @@
+@media ( max-width : 750px ) {
+    .article-container{
+        padding: 200px 30px;
+        z-index: 100; 
+        position: relative;
+    }
+    .three-circle>img{
+        width: 200px;
+        margin-left: 1rem;
+    }
+    .fixed-left-lg{
+        position: relative;
+    }
+    
+
+}
+
+@media ( min-width : 750.02px ) and ( max-width : 1200px ) {
+    .article-container{
+        padding: 200px 80px;
+        z-index: 100;
+        position: relative;
+    }
+    .three-circle>img{
+        width: 200px;
+        margin-left: 1rem;
+    }
+    .fixed-left-lg{
+        position: relative;
+    }
+}
+
+@media ( min-width : 1200.02px ) {
+    .article-container{
+        padding: 200px 120px;
+        z-index: 100;
+        position: relative;
+    }
+    .three-circle>img{
+        width: 250px;
+        margin-left: 1rem;
+    }
+    .fixed-left-lg{
+        position: fixed;
+        top: 300px;
+        bottom: 200px;
+    }
+ 
+}
+
+.article-nav-bg{
+    width: 100%;
+    height: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    /* z-index: 200; */
+    background-image: url('/img/article-navbar-bg.svg');
+    background-repeat: no-repeat;
+    transition: .4s;
+    transition-timing-function: ease-out;
+    opacity: 80%;
+    pointer-events: none;
+}
+
+.article-nav-bg.sm{
+    height: 100%;
+    opacity: 100%;
+}
+
+
+
+
+.left-content{
+    padding-right: 20px !important;
+}
+
+
+
+.article-title{
+    font-size: 42px;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.article-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.article-time{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.reading-indicator{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 60px;
+    display: none;
+}
+
+.reading-indicator>p{
+    padding-bottom: 4px;
+}
+
+.right-content>img{
+    padding: 40px 0px;
+    width: 100%;
+}
+
+.right-content>p{
+    font-size: 18px;
+}
+
+.right-content h3{
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 6px;
+    padding-top: 100px;
+}
+
+.right-content a{
+    color: #505050;
+}
+
+.right-content a:hover{
+    color: #27A2BB;
+}
+
+
+
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: #bfbfbf;
+}
+
+.quote{
+    font-style: italic;
+    font-weight: 600;
+    padding-top: 6px;
+}
+
+.emphesize{
+    font-weight: 700;
+    padding-bottom: 6px;
+}
+
+li{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.tcsa-hero{
+    width: 50%;
+}
+
+
+
+.my-button button{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    transition: background-color ease-out .3s;
+}
+
+
+.my-button a{
+    text-decoration: none;
+}
+
+.my-button{
+    width: 100%;
+}
+
+
+.link-live{
+    background-color: #ffffff;
+    color:  #505050; 
+}
+
+
+.link-live:hover{
+    background-color: #85BFCD;
+    color: white;
+}
+
+
+.link-github{
+    background-color: white;
+    color: #505050;
+}
+
+.link-github:hover{
+    background-color: #F4B076;
+    color: white;
+
+}
+
+.pt-img-group > p{
+    text-align: center;
+}
+
+.youtube-video-player{
+    z-index: 20000;
+}
+
+
+.original-design-in-figma{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.original-design-in-figma img{
+    width: 300px;
+}
