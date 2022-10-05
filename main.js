@@ -36,3 +36,9 @@ $(window).on('scroll', function() {
 $(document).on("click", ".youtube-video-player", function(){ $(".a").click(); });
 
 
+// HAMBURGER MENU JS
+const navToggle = document.querySelector('.nav-toggle');
+
+navToggle.addEventListener('click', () => {
+  document.body.classList.toggle('nav-open');
+});

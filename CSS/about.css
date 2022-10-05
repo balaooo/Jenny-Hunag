@@ -5,7 +5,10 @@
         position: relative;
     }
     .left-img>img{
-        height: 40%!important;
+        max-width: 100%; 
+        display: block; 
+        height: auto;
+        --webkit-transform: translate3d(0,0,0);
     }
     
 
@@ -18,7 +21,9 @@
         position: relative;
     }
     .left-img>img{
-        height: 80%!important;
+        max-width: 100%; 
+        display: block; 
+        height: auto;
     }
     
 
@@ -55,14 +60,14 @@
 .about-container p{
     margin-bottom: 1em !important;
     position: relative;
-    z-index: 1000;
+    z-index: 800;
 }
 
 .about-container h3{
     font-family: 'Yeseva One', cursive;
     font-size: 3rem;
     position: relative;
-    z-index: 1000;
+    z-index: 800;
     margin-bottom: 1em !important;
 }
 
@@ -78,7 +83,7 @@
 
 .my-button{
     position: relative;
-    z-index: 1000;
+    z-index: 800;
 }
 
 
