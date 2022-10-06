@@ -12,6 +12,9 @@
         position: relative;
     }
     
+    .my-button{
+        width: 100%;
+    }
 
 }
 
@@ -27,6 +30,11 @@
     }
     .fixed-left-lg{
         position: relative;
+        width: 100%;
+    }
+
+    .my-button{
+        width: 50%;
     }
 }
 
@@ -44,8 +52,12 @@
         position: fixed;
         top: 300px;
         bottom: 200px;
+        width: 50%;
     }
- 
+    
+    .my-button{
+        width: 50%;
+    }
 }
 
 .article-nav-bg{
@@ -181,9 +193,7 @@ li{
     text-decoration: none;
 }
 
-.my-button{
-    width: 100%;
-}
+
 
 
 .link-live{
@@ -227,3 +237,17 @@ li{
 .original-design-in-figma img{
     width: 300px;
 }
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

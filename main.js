@@ -38,7 +38,13 @@ $(document).on("click", ".youtube-video-player", function(){ $(".a").click(); })
 
 // HAMBURGER MENU JS
 const navToggle = document.querySelector('.nav-toggle');
+// const closeAfterClickSession = querySelector('.nav-link')
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
 });
+
+// closeAfterClickSession.addEventListener('click', () =>{
+//   document.removeClass('nav-open');
+// });
+

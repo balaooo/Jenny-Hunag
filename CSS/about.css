@@ -2,7 +2,7 @@
     .about-container{
         position: relative;
         margin-top: 10em !important;
-        position: relative;
+
     }
     .left-img>img{
         max-width: 100%; 
@@ -10,7 +10,25 @@
         height: auto;
         --webkit-transform: translate3d(0,0,0);
     }
-    
+    .about-container h3{
+        font-family: 'Yeseva One', cursive;
+        font-size: 2rem;
+        position: relative;
+        z-index: 800;
+        margin-bottom: 1em !important;
+    }
+    .about-container p{
+        margin-bottom: .5em !important;
+        position: relative;
+        z-index: 800;
+    }
+    .right-about-content{
+        padding: 20px !important;
+        background: white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+    }
 
 }
 
@@ -18,12 +36,29 @@
     .about-container{
         position: relative;
         margin-top: 10em !important;
-        position: relative;
+
     }
     .left-img>img{
-        max-width: 100%; 
-        display: block; 
-        height: auto;
+        max-height: 100% !important;
+    }
+    .about-container h3{
+        font-family: 'Yeseva One', cursive;
+        font-size: 2rem;
+        position: relative;
+        z-index: 800;
+        margin-bottom: 1em !important;
+    }
+    .about-container p{
+        margin-bottom: 1em !important;
+        position: relative;
+        z-index: 800;
+    }
+    .right-about-content{
+        padding: 70px !important;
+        background: white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
     }
     
 
@@ -33,7 +68,7 @@
     .about-container{
         position: relative;
         margin-top: 10em !important;
-        position: relative;
+
     }
     
     .about-container::after{
@@ -52,33 +87,36 @@
     .left-img>img{
         height: 100%!important;
     }
+    .about-container h3{
+        font-family: 'Yeseva One', cursive;
+        font-size: 3rem;
+        position: relative;
+        z-index: 800;
+        margin-bottom: 1em !important;
+    }
+    .about-container p{
+        margin-bottom: 1em !important;
+        position: relative;
+        z-index: 800;
+    }
+    .right-about-content{
+        padding: 70px !important;
+        background: white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+    }
 }
 
 
 
 
-.about-container p{
-    margin-bottom: 1em !important;
-    position: relative;
-    z-index: 800;
-}
-
-.about-container h3{
-    font-family: 'Yeseva One', cursive;
-    font-size: 3rem;
-    position: relative;
-    z-index: 800;
-    margin-bottom: 1em !important;
-}
 
 
-.right-about-content{
-    padding: 70px !important;
-    background: white;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    position: relative;
-}
+
+
+
+
 
 
 .my-button{
