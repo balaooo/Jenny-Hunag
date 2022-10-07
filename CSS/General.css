@@ -20,6 +20,8 @@ body{
   min-height: 100%;
   padding-top: 100px;
   width: 100%;
+  overflow: -scroll;
+  overflow-x: hidden;
 }
 
 
@@ -97,26 +99,26 @@ p{
 }
 @keyframes slide-right {
   from {
-    margin-left: -150%;
     opacity: 0;
+    transform: translateX(-150%);
   }
   to {
-    margin-left: 0%;
+    transform: translateX(0%);
     opacity: 100%;
   }
 }
 
-/***** Slide Left *****/
+/* **** Slide Left **** */
 .slide-left {
   animation: 2s slide-left;
 }
 @keyframes slide-left {
   from {
-    margin-left: 150%;
+    transform: translateX(150%);
     opacity: 0;
   }
   to {
-    margin-left: 0%;
+    transform: translateX(0%);
     opacity: 100%;
   }
 }
