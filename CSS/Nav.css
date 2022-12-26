@@ -1,6 +1,9 @@
 
    
     @media(max-width: 750px){
+    .nav-left img{
+        width: 50px;
+    }    
      /* HAMBURGER MENU CSS */
     .nav-for-mobile {
         background: rgba(0, 0, 0, 0.804);
