@@ -1,141 +1,82 @@
-@media ( max-width : 750px ) {
-    .about-container{
-        position: relative;
-        margin-top: 10em !important;
+.about-container{
+    max-width: 1048px;
+    width: 100%;
+    margin: auto;
+  }
 
-    }
-    .left-img>img{
-        max-width: 100%; 
-        display: block; 
-        height: auto;
-        --webkit-transform: translate3d(0,0,0);
-    }
-    .about-container h3{
-        font-family: 'Yeseva One', cursive;
-        font-size: 2rem;
-        position: relative;
-        z-index: 800;
-        margin-bottom: 1em !important;
-    }
-    .about-container p{
-        margin-bottom: .5em !important;
-        position: relative;
-        z-index: 800;
-    }
-    .right-about-content{
-        padding: 20px !important;
-        background: white;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        position: relative;
-    }
+
+
+/* ************************
+            INTRO
+************************ */
+.about-intro{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
-@media ( min-width : 750.02px ) and ( max-width : 1200px ) {
-    .about-container{
-        position: relative;
-        margin-top: 10em !important;
-
-    }
-    .left-img>img{
-        max-height: 100% !important;
-    }
-    .about-container h3{
-        font-family: 'Yeseva One', cursive;
-        font-size: 2rem;
-        position: relative;
-        z-index: 800;
-        margin-bottom: 1em !important;
-    }
-    .about-container p{
-        margin-bottom: 1em !important;
-        position: relative;
-        z-index: 800;
-    }
-    .right-about-content{
-        padding: 70px !important;
-        background: white;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        position: relative;
-    }
-    
-
+.about-intro img{
+    max-width: 420px;
+    width: 100%; 
+    display: inline-block;   
 }
 
-@media ( min-width : 1200.02px ) {
-    .about-container{
-        position: relative;
-        margin-top: 10em !important;
+.about-intro div{
+    padding-left: 60px;
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+}
 
-    }
-    
-    .about-container::after{
-        content: '';
-        background: url('../img/about-bg.svg');
-        background-repeat: no-repeat;
-        background-position: right;
-        position: absolute;
-        opacity: 50%;
-        top: 0;
-        left: 0;
-        right: 70x;
-        width: 100%;
-        height: 100%;
-    }
-    .left-img>img{
-        height: 100%!important;
-    }
-    .about-container h3{
-        font-family: 'Yeseva One', cursive;
-        font-size: 3rem;
-        position: relative;
-        z-index: 800;
-        margin-bottom: 1em !important;
-    }
-    .about-container p{
-        margin-bottom: 1em !important;
-        position: relative;
-        z-index: 800;
-    }
-    .right-about-content{
-        padding: 70px !important;
-        background: white;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        position: relative;
-    }
+.about-intro div h2{
+    font-family: 'Yeseva One', cursive;
+}
+
+.about-intro div p{
+    padding: 20px 0;
+    font-size: 20px;
 }
 
 
+/* ************************
+            STORY
+************************ */
 
-
-
-
-
-
-
-
-
-
-.my-button{
-    position: relative;
-    z-index: 800;
+.about-story h2{
+    font-family: 'Yeseva One', cursive;
 }
 
-
-
-
-
-.link-resume{
-    background-color: #85BFCD;
-    color: white;
-    width: 10px;
+.story-block-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.link-resume:hover{
-    background-color: white;
-    color:#85BFCD;
-    
+.story-block{
+    max-width: 300px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.story-block h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ************************
+            WORK
+************************ */
+.working-block{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 80px;
+    border-color: #85BFCD;
+}
+
+.working-block img{
+    max-width: 60px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
 }

@@ -2,7 +2,7 @@
    
     @media(max-width: 750px){
     .nav-left img{
-        width: 50px;
+        width: 42px;
     }    
      /* HAMBURGER MENU CSS */
     .nav-for-mobile {
@@ -132,8 +132,7 @@
         z-index: 1000;
     }
     .nav-left{
-        width: 56px;
-        height: 56px;
+        width: 48px;
         z-index: 2000;
     }
 
@@ -175,6 +174,7 @@
         .nav-left img{
             width: 100%;
             overflow: visible;
+            max-width: 48px;
         }
 
 
