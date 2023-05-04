@@ -66,17 +66,59 @@
 /* ************************
             WORK
 ************************ */
-.working-block{
+.about-working h2{
+    font-family: 'Yeseva One', cursive;
+}
+
+
+.circle-border{
     display: flex;
     border-style: solid;
     border-width: 1px;
     border-radius: 80px;
-    border-color: #85BFCD;
+    border-color: #27A2BB;
+    padding: 14px;
+    align-items: center;
+    
 }
 
-.working-block img{
+.circle-border img{
     max-width: 60px;
     width: 100%;
     max-height: 60px;
     height: 100%;
+    display: inline-block;
 }
+
+.circle-border button{
+    border: none;
+    background-color: #85BFCD;
+    width: 100%;
+    max-width: 100px;
+}
+
+.circle-wrap{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.circle-text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.circle-text h5{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.circle-text p{
+    font-size: 14px;
+}
+
