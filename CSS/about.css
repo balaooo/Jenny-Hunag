@@ -17,7 +17,7 @@
 }
 
 .about-intro img{
-    max-width: 420px;
+    max-width: 360px;
     width: 100%; 
     display: inline-block;   
 }
@@ -56,18 +56,25 @@
 .story-block{
     max-width: 300px;
     width: 100%;
-    margin-right: 40px;
+    margin: 0 auto;
 }
 
 .story-block h5{
     font-family: 'Montserrat', sans-serif;
 }
 
+.story-block img{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 40px;
+}
+
 /* ************************
             WORK
 ************************ */
-.about-working h2{
+.section-wrap h2{
     font-family: 'Yeseva One', cursive;
+    margin-bottom: 30px;
 }
 
 
@@ -79,14 +86,13 @@
     border-color: #27A2BB;
     padding: 14px;
     align-items: center;
+    margin-bottom: 18px;
     
 }
 
 .circle-border img{
     max-width: 60px;
     width: 100%;
-    max-height: 60px;
-    height: 100%;
     display: inline-block;
 }
 
@@ -95,6 +101,9 @@
     background-color: #85BFCD;
     width: 100%;
     max-width: 100px;
+    border-radius: 30px;
+    height: 100%;
+    min-height: 54px;
 }
 
 .circle-wrap{
@@ -104,6 +113,7 @@
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    padding: 4px 20px;
 }
 
 .circle-text{
@@ -122,3 +132,102 @@
     font-size: 14px;
 }
 
+.orange-border{
+    border-color: #F4B076 ;
+}
+
+/* ************************
+            CHAT
+************************ */
+.about-chat{
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.about-chat h2{
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.about-chat h2::before{
+    content: '';
+    background-image: url(../img/bling.png);
+    width: 70px;
+    height: 70px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.chat-border-group{
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+
+.chat-border{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #27A2BB;
+    max-width: 360px;
+    width: 100%;
+    min-height: 260px;
+    height: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.chat-wrap{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.chat-wrap img{
+    max-width: 200px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 0 10px;
+    }
+    .circle-text{
+        width: 170px;
+
+    }
+    .circle-border button{
+        display: none;
+    }
+    .about-intro img{
+        margin: 0 auto;
+    }
+    .about-intro div{
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+}
