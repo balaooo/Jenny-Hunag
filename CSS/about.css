@@ -145,12 +145,16 @@
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
+    padding: 50px 30px;
+    margin-top: 100px;
 }
 
 .about-chat h2{
     font-family: 'Yeseva One', cursive;
     text-align: center;
     margin: 0 10px;
+    
+    
 }
 
 .about-chat h2::before{
@@ -169,6 +173,7 @@
     display: flex;
     vertical-align: middle;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .chat-border{
@@ -178,17 +183,17 @@
     border-color: #27A2BB;
     max-width: 360px;
     width: 100%;
-    min-height: 260px;
+    min-height: 310px;
     height: 100%;
     display: inline-block;
     margin: 0 auto;
 }
 
 .chat-wrap{
-    max-width: 200px;
+    max-width: 240px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0px;
     text-align: center;
 }
 .chat-wrap img{
@@ -196,11 +201,26 @@
     width: 100%;
 }
 
+.exhibit-img{
+    margin-top: 30px;
+}
 
+.chat-wrap h5{
+    font-family: 'Montserrat', sans-serif;
+}
+.chat-wrap h5:hover{
+    color: #27A2BB;
+}
 
+.chat-wrap a{
+    font-family: 'Montserrat', sans-serif;
+    color: #575757;
+    text-decoration: none;
+}
 
-
-
+.chat-wrap a:hover{
+    color: #27A2BB;
+}
 
 
 
