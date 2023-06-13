@@ -66,7 +66,7 @@
         <div class="right-content mt-3 col-md-8">
             <div class="opening">
                 <h4>I am responsible for designing the pages and coding the layouts in this project.</h4>
-            <h4>This is a campaign aiming for enhancing the utility rate of digital money transfer function to reduce the number of in-person bank transactions.</h4>
+                <h4>This is a campaign aiming for enhancing the utility rate of digital money transfer function to reduce the number of in-person bank transactions.</h4>
             <p>＊This website was originally written in Mandarin and has been translated into English for the purpose of this portfolio.</p>
             </div>
             
@@ -81,50 +81,42 @@
             <p>In response to the digitalization trend in the banking industry, we are launching this marketing campaign in 2023 to encourage the transition of more transaction services to online platforms. By completing tasks and participating in the lottery, we aim to stimulate the usage of online transfers and reduce the frequency of in-person branch transactions.</p>
             
             
-            <h3>Insights</h3>
-            <p class="emphesize">Even though with the curent app, it's still hard for users to anticipate the crowdedness of the gym.</p>
-            <p>User research shows that 80% of users who care about quality of working out will always go on the app or website of the fitness center to check current number of people. However, it doesn’t help that much because even knowing the number of people in the fitness center before heading to it, there's still a chance that the venue will become crowded after arriving. Therefore, the main design goal is to give more clues and information to users on the app, so they can make decision based on these facts and create a much more enjoyable workout experience.</p>
-            <h3>Problem statement</h3>
-            <p class="emphesize">How do users avoid crowdedness of the gym by using the app?</p>
-            <p>We can inspect the current user flow and find out that now users don’t interact with the app for a long time. Also, the information placed on the app are not enough for users to tell the crowdedness of the gym after they arrived at the gym.</p>
-            <h3>Redesign features</h3>
-            <img src="/img/tsca-redesign-feature.svg" alt="">
-            <ol>
-                <li>Chart of all-day stream, with highlight of current number of people: Users can easily tell its crowdedness before and during their workout when they are at home.</li>
-                <li>Switching day with a click: If it’s crowded, then users can check data from the other day, and seek for another proper time slot.</li>
-                <li>Crowdedness highlight tag: Compare to numbers, having a tag with color beside sports provide a more specific visual clue for users to decide whether going workout or not.</li>
-                <li>A hint of average staying time: For example, bouldering takes 2-3 hours; however, gym session normally only needs 1-1.5 hours. This is a second clue for users to estimate the crowdedness of the venue.</li>
-            </ol>
-            <!-- Redesigned user flow -->
-            <h3>Redesigned user flow</h3>
-            <img src="/img/redesigned-user-flow.svg" alt="">
-            <!-- Before After video -->
-            <div class="befor-after d-flex justify-content-between row">
-                <div class="before-video d-flex flex-column align-items-center col-lg-6">
-                    <p class="mb-3 mt-3">Before</p>
-                    <video loop width="276" height="540" autoplay muted>
-                        <source src="/video/tsca-before-video.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="after-video d-flex flex-column align-items-center col-lg-6">
-                    <p class="mb-3 mt-3">After</p>
-                    <video loop width="276" height="540" autoplay muted>
-                        <source src="/video/tsca-after-video.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            <h3>User testing</h3>
-            <p>Because it’s impractical for me to acquire real data from each sports center, so my user testing focus more on the fluency of the flow and try to know if there’s any confusing elements.</p>
+            <h3>Problems</h3>
                 <ul>
-                    <li>Please check the current number of people in Beitou swimming pool.</li>
-                    <li>If it’s crowded now in the pool, and you aren’t willing to go, what will you do next?</li>
-                </ul> 
-            <h3>Results & takeaways</h3>
-            <p>With this solution, 5 out of 5 users responded they feel much more relief after seeing the statistics. If their time is flexible, they will based on the past information and decide when to go workout, so they can get a comfortable experience. However, couple of feedbacks need to be considered afterward:</p>
+                    <li>The content of the activity is extensive and <span class="emphesize">involves various banking terminology</span>, which may lead to difficulties in comprehension.</li>
+                    <li>As the web page serves as a marketing platform, users typically have limited attention span. Therefore, it is crucial to  <span class="emphesize">enhance engagement and achieve marketing goals</span>.</li>
+                </ul>  
+                
+            
+            <h3>Users</h3>
+            <p>After discussions with the product team, we have roughly categorized users into two main groups:</p>
+            <div class="user-img">
+                <img src="./img/user01.png" alt="">
+                <img src="./img/user02.png" alt="">
+            </div>
+            
+            <h3>User Interface</h3>
+            <p>Based on pain points and user characteristics, I include 4 key elements in UI/UX design:</p>
+            <ol>
+                <li>Main visual that clearly presents the activity flow</li>
+                <li>Use icons to assist in explaining complex banking terms</li>
+                <li>Highlight various explanatory sections with color blocks</li>
+                <li>Manage lengthy explanation texts with pop-ups or URLs</li>
+            </ol>
+
+            <!-- SESSION 1 -->
+            <p>1. Main visual that clearly presents the activity flow</p>
+            <P>The main visual utilizes a flowchart with color blocks representing different steps to provide a concise overview.</P>
             <ul>
-                <li>Day selector order: 2 users feel that re-adjusting the day order after they choose will lead some confusions. It will be better if the order stays at the same place no matter which day is it.</li>
-                <li>Swipe to change date: 3 users try to swipe to change different date instead of using day selector. Adding swiping function will add on the over all user experience.</li>
+                <li>Well-acquainted customers can immediately proceed with the activity registration by using the CTA button below.</li>
+                <li>If new customers want to learn more about the activity details, they can refer to the color blocks and find corresponding detailed explanations in the form below.</li>
             </ul>
+
+            <p>The original design directly leads to a text explanation section, which contains a large amount of text. This can create a burden for users to read and may lead them to give up participating in the activity.</p>
+            <div class="window">
+                <img src="./img/01-old.png" alt="">
+            </div>
+            
         </div>
     </div>
 

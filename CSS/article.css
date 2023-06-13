@@ -40,7 +40,7 @@
 
 @media ( min-width : 1200.02px ) {
     .article-container{
-        padding: 200px 120px;
+        padding: 80px 120px;
         z-index: 100;
         position: relative;
     }
@@ -50,9 +50,6 @@
     }
     .fixed-left-lg{
         position: fixed;
-        top: 300px;
-        bottom: 200px;
-        width: 50%;
     }
     
     .my-button{
@@ -95,7 +92,8 @@
     font-size: 42px;
     font-family: 'Yeseva One', cursive;
     margin-bottom: 10px;
-    width: 50%;
+    max-width: 320px;
+    width: 100%;
 }
 
 .article-subtitle{
@@ -251,4 +249,38 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+.opening > h4{
+    margin-bottom: 30px;
+}
+  ul {
+    list-style: circle !important;
+    font-family: 'Montserrat', sans-serif;;
+  }
+
+  .user-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user-img > img{
+    max-width: 260px;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .window{
+    max-height: 390px;
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .window > img {
+    max-width: 700px;
+    width: 100%;
+    overflow: scroll;
   }
