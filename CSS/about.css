@@ -4,7 +4,9 @@
     margin: auto;
   }
 
-
+p {
+    margin-bottom: 0 !important;
+}
 
 /* ************************
             INTRO
