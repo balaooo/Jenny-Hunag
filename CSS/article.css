@@ -1,6 +1,6 @@
 @media ( max-width : 750px ) {
     .article-container{
-        padding: 100px 20px;
+        padding: 40px 14px;
         z-index: 100; 
         position: relative;
     }
@@ -20,7 +20,7 @@
 
 @media ( min-width : 750.02px ) and ( max-width : 1200px ) {
     .article-container{
-        padding: 200px 80px;
+        padding: 40px 60px;
         z-index: 100;
         position: relative;
     }
@@ -31,6 +31,7 @@
     .fixed-left-lg{
         position: relative;
         width: 100%;
+        margin-bottom: 40px;
     }
 
     .my-button{
@@ -159,14 +160,13 @@
 }
 
 .emphesize{
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 6px;
 }
 
 li{
     font-size: 18px;
-    margin-top: 20px;
-    font-weight: 500;
+    margin-top: 10px;
 }
 
 .tcsa-hero{
@@ -315,3 +315,73 @@ li{
     margin: 0 auto;
   }
 
+/* trust-problem session */
+
+.problem-list .problem-a{
+    display: none;
+    
+}
+.problem-list .problem-q{
+    position: relative;
+    color: #27A2BB;
+    padding: 0 30px 0 0;
+}
+.problem-list .problem-q::after{
+    content: '';
+    background: url(../img/arrowdown.svg) no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 5px;
+    transition: 0.2s;
+}
+
+.problem-list .active .problem-q::after{
+    transform: rotate(180deg);
+    top: -5px;
+    transition: 0.2s;
+}
+.problem-list ul li{
+    list-style: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.problem-list-ul{
+    padding-left: none !important;
+}
+.problem-list ul .active{
+    transition: 0.5s;
+}
+
+.problem-list .active .problem-a{
+    display: block;
+}
+
+
+.trust-solution img {
+    max-width: 750px;
+    width: 100%;
+    filter: none;
+}
+
+@media screen and (min-width: 992px) {
+    .trust-solution img {
+        max-width: 750px;
+        width: 100%;
+        transition: transform .2s;
+        filter: grayscale(100%);
+    }
+    .trust-solution img:hover{
+        transform: scale(1.5);
+        filter: grayscale(0%);
+    }
+}
+
+
+.trust-solution h5{
+    color: #27A2BB;
+  }

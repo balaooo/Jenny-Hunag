@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online transfer campaign landing page</title>
+    <title>Trust Inquiry Website</title>
     <link rel="icon" type="image/x-icon" href="/img/fav-icon-jh.svg">
     <!-- JQuery 3.6.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -46,7 +46,7 @@
     </nav>
     <!-- MAIN CONTENT -->
     <div class="article-container d-flex row position-relative">
-        <div class="left-content col-md-4 d-flex flex-column align-items-start">
+        <div class="left-content col-lg-4 d-flex flex-column align-items-start">
             <div class="fixed-left-lg">
                 <div class="article-title">Trust Inquiry Website</div>
                 <div class="article-subtitle">UX design ‧ @E.SUN Bank</div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="right-content mt-3 col-md-8">
+        <div class="right-content mt-3 col-lg-8">
             <div class="opening">
                 <h4>I am the sole designer for this project and have been working closely with PM and engineers throughout the development process.</h4>
                 <h4>The objective of this project is to create an intuitive trust inquiry system, enabling customers to easily access information and replace paper-based processes.</h4>
@@ -83,125 +83,108 @@
             <img src="./img/trust-basic flow.png" alt="">
 
             <h3>Problems</h3>
-                <ul class="problem-list">
+            <div class="problem-list">
+                <ul class="problem-list-ul">
                     <!-- 1 -->
                     <li>
                         <div class="problem-q">1. How to deal with multiple Login Paths?</div>
-                        <div class="problem-a">The existing personal trust system consists of <span class="emphesize">two different types of trusts, each with its own authentication process.</span> <span class="emphesize">Users only need to authenticate themselves for the specific items they want to inquire about.</span> Therefore, each user will have their own login path based on their authentication requirements.</div>
+                        <div class="problem-a mt-2">The existing personal trust system consists of <span class="emphesize">two different types of trusts, each with its own authentication process.</span> <span class="emphesize">Users only need to authenticate the one they need.</span> Therefore, each user will have their own login path based on the trust they want to inquire.</div>
                     </li>
                     <!-- 2 -->
                     <li>
-                        <div>2. How to present the query options?</div>
-                        <div>Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively</div>
+                        <div class="problem-q">2. How to present the query options?</div>
+                        <div class="problem-a mt-2">Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively.</div>
+                    </li>
+                    <!-- 3 -->
+                    <li>
+                        <div class="problem-q">3. How to express proprietary terms?</div>
+                        <div class="problem-a mt-2">In the banking industry, there are specific terms used for different types of trusts, such as "self-beneficiary trust" and "third-party beneficiary trust." The authentication process for these two types of trusts varies. it is important to address how to present these proprietary terms in a way that is easily understandable to users.</div>
+                    </li>
+                    <!-- 4 -->
+                    <li>
+                        <div class="problem-q">4. How to align with the existing paper statement?</div>
+                        <div class="problem-a mt-2">Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively</div>
+                    </li>
+                    <!-- 5 -->
+                    <li>
+                        <div class="problem-q">5. What is the file upload process?</div>
+                        <div class="problem-a mt-2">One of the authentication steps involves file upload, but there are some details that need to be confirmed before the file can be uploaded. Therefore, the goal is to design an intuitive and simple process to ensure a smooth file upload experience.</div>
                     </li>
                 </ul>    
-                    
-                    
-                    
-                    <!-- 2 -->
-                    <li></li>
-                    <p>.</p>
-                    <!-- 3 -->
-                    <li>How to express proprietary terms?</li>
-                    <p>In the banking industry, there are specific terms used for different types of trusts, such as "self-beneficiary trust" and "third-party beneficiary trust." The authentication process for these two types of trusts varies. it is important to address how to present these proprietary terms in a way that is easily understandable to users.</p>
-                    <!-- 4 -->
-                    <li></li>
-                    <p></p>
-                    <!-- 5 -->
-                    <li></li>
-                    <p></p>
-                </ol>  
-                
-            
-            <h3>Users</h3>
-            <p>After discussions with the product team, we have roughly categorized users into two main groups:</p>
-            <div class="user-img">
-                <img src="./img/user01.png" alt="">
-                <img src="./img/user02.png" alt="">
             </div>
             
-            <h3>User Interface</h3>
-            <p>Based on pain points and user characteristics, I include 4 key elements in UI/UX design:</p>
-            <ol>
-                <li>Main visual that clearly presents the activity flow</li>
-                <li>Use icons to assist in explaining complex banking terms</li>
-                <li>Highlight various explanatory sections with color blocks</li>
-                <li>Manage lengthy explanation texts with pop-ups or URLs</li>
-            </ol>
-
+            <h3>Solutions</h3>
             <!-- SESSION 1 -->
-            <div class="ui-session">
-                <h5>1. Main visual that clearly presents the activity flow</h5>
-                <P>The main visual utilizes a flowchart with color blocks representing different steps to provide a concise overview.</P>
-                <ul>
-                    <li>Well-acquainted customers can immediately proceed with the activity registration by using the CTA button below.</li>
-                    <li>If new customers want to learn more about the activity details, they can refer to the color blocks and find corresponding detailed explanations in the form below.</li>
-                </ul>
-
-                <p class="mt-5"><b>The original design:</b> Directly leads to a text explanation section, which contains a large amount of text. This can create a burden for users to read and may lead them to give up participating in the activity.</p>
-                <div class="window">
-                    <img src="./img/s1-old.png" alt="">
-                </div>
-                <p class="mt-5"><b>The new design:</b> Charts and color blocks make the activity content lively, enhancing understanding and absorption of information.</p>
-                <div class="window">
-                    <img src="./img/s1-new.png" alt="">
-                </div>
+            <div class="trust-solution">
+                <h5 class="mt-3 fw-semibold fst-italic">1. Clarify User Types to Identify Login Path</h5>
+                <p>During the meeting, we quickly <span class="emphesize">identified five different login scenarios</span> and planned individual user flows based on these scenarios. We will then design subsequent screens based on these flows.</p>
+                <ol>
+                    <li>Only Self-Benefit Trust</li>
+                    <li>Only Third-Party Benefit Trust</li>
+                    <li>Both Self-Benefit Trust and Third-Party Benefit Trust (both not verified)</li>
+                    <li>Both Self-Benefit Trust (verified) and Third-Party Benefit Trust (not verified)</li>
+                    <li>Both Self-Benefit Trust (not verified) and Third-Party Benefit Trust (verified)</li>
+                </ol>
+                <img src="./img/trust-s1.png" alt="">
             </div>
 
              <!-- SESSION 2 -->
-             <div class="ui-session">
-                <h5>2. Use icons to assist in explaining complex banking terms</h5>
+             <div class="trust-solution">
+                <h5 class="mt-5 fw-semibold fst-italic">2. Layout of Query Options</h5>
+                <p>After successfully logging in, the design includes a two stage table to allow users to perform trust inquiry.</p>
+                <p class="mt-3 fw-semibold">Stage One</p>
                 <ul>
-                    <li>Ensure that the icon prompts are represented with simple and easily understandable graphics. </li>
-                    <li>Adhere to the design system of the bank for icon usage (e.g., voucher, points icon) to avoid confusion across different activities. </li>
-                    <li>Maintain consistency by using the same set of icons in all promotional materials associated with the activity (e.g., EDMs, posters, collateral).</li>
+                    <li>Users can overview all trust information.</li>
+                    <li>Users can click on a specific trust to access more detailed information.</li>
                 </ul>
-                <div class="window">
-                    <img src="./img/s2.png" alt="">
-                </div>
+                <!-- 第一階段的圖片 -->
+                <img src="" alt="">
+                <p class="mt-3 fw-semibold">Stage Two</p>
+                <ul>
+                    <li>Upon clicking a trust, users are directed to the detail page.</li>
+                    <li>Tab navigation is implemented to allow users to choose the desired inquiry category.</li>
+                    <li>Users can also use the buttons at the bottom of each page to return to the overview page.</li>
+                </ul>
+                <!-- 第二階段的圖片 -->
+                <img src="" alt="">
             </div>
 
              <!-- SESSION 3 -->
-             <div class="ui-session">
-                <h5>3. Highlight various explanatory sections with color blocks</h5>
-                <p>To prevent user confusion when navigating through the activity's various sections, utilize different color blocks to represent different functions. This will help users easily identify and distinguish between different sections of the page, especially when using the fixed navigation for quick jumps between sections.</p>
-                <video class="mt-4" controls>
-                    <source src="./img/s3.mp4">
-                </video>
+             <div class="trust-solution">
+                <h5 class="mt-5 fw-semibold fst-italic">3. UX Writing of Self-benefit Request and Non-self-benefit Request </h5>
+                <p>As mentioned, we need to address the UX writing for self-benefit and non-self-benefit requests. We have chosen three versions and conducted internal testing, and it was found that using the most conversational tone is easier to understand.</p>
+                <!-- 放表格或圖片 -->
             </div>
-             <!-- SESSION 4 -->
-             <div class="ui-session">
-                <h5>4. Manage lengthy explanation texts with pop-ups or URLs</h5>
-                <p>Complex task steps are accompanied by explanatory text and images to assist users. </p>
-                <ul class="">
-                    <li>Users don't need to search for the steps of these activity tasks on their own.</li>
-                    <li>To maintain a <b>clean interface</b>, only icons are used on the main screen, while the detailed content is displayed in pop-up windows or linked to separate explanatory websites.</li>
-                    <li>Mobile users can also read information easily in this format.</li>
-                </ul>
 
-                <p class="mt-5"><b>The original design:</b> Displayed all the information on the screen, which made it appear cluttered and difficult to read.</p>
-                <div class="window">
-                    <img src="./img/s4-old.png" alt="">
-                </div>
-                <p class="mt-5"><b>The new design:</b> Incorporates icons as buttons, allowing customers to click on the tutorials they need, making the interface cleaner and more streamlined.</p>
-                <video class="mt-4" controls>
-                    <source src="./img/s4-new.mp4">
-                </video>
+            <!-- SESSION 4 -->
+            <div class="trust-solution">
+                <h5 class="mt-5 fw-semibold fst-italic">4. Consistent table presentation with the current paper statement</h5>
+                <p>As mentioned, we need to address the UX writing for self-benefit and non-self-benefit requests. We have chosen three versions and conducted internal testing, and it was found that using the most conversational tone is easier to understand.</p>
+                <!-- 放表對帳單節圖&網頁規劃的內容 -->
+            </div>
+
+             <!-- SESSION 5 -->
+             <div class="trust-solution">
+                <h5 class="mt-5 fw-semibold fst-italic">5. Document Upload Process Page</h5>
+                <p>The old process was entirely offline, but in this update, we aim to integrate it online.</p>
+                <!-- Before -->
+                <p class="mt-3 fw-semibold">Original Concept</p>
+                <p>Initially, the PM wanted to consolidate all the steps on a single page. However, during internal testing, it was found that <span class="emphesize">having everything on one page</span> made it <span class="emphesize">unclear</span> for users which steps to begin with and what their progress should be.</p>
+                <!-- 放原本的圖 要翻譯成英文 -->
+                <img src="" alt="">
+                <!-- After -->
+                <p class="mt-3 fw-semibold">New Design</p>
+                <p>Therefore, the decision was made to <span class="emphesize">separate the steps and use a progress bar</span> to indicate the required completion steps.</p>
             </div>
 
 
             <h3>Takeaways</h3>
-            <h5 class="fw-semibold">Outcome:</h5>
             <ul>
-                <li>By promoting the event on various social media platforms and driving traffic to this webpage, <b>the number of participants exceeded expectations by approximately 10%.</b>  As a result, the team decided to extend the event until the end of the year, with the goal of achieving a participation rate that is 15-20% higher than initially anticipated.</li>
-                <li>Due to the successful online promotion, starting from H2, I will also be responsible for designing offline promotional materials for the event, such as posters and standees in branches.</li>
+                <li>Utilizing our existing design system and components allowed us to skip the wireframing stage and quickly create real product pages for testing.</li>
+                <li>Initially, we planned to have fewer pages, aiming to reduce development time. However, through testing, we discovered that breaking down steps and minimizing actions on each page was more suitable for a website with many professional terms.</li>
+                <li>Based on the test results, the final product adopted the new design approach to enhance the user experience and make it more intuitive.</li>
             </ul>
 
-            <h5 class="fw-semibold">Optimization:</h5>
-            <ul>
-                <li>To further enhance the user experience, we will provide additional guidance by adding "i" icons next to each task in the introductory flowchart. These icons will allow users to quickly navigate to the tutorial section below.</li>
-                <li>In anticipation of the monthly announcement of the winners for this event, we are planning to implement a tab-based navigation system to prevent the webpage from becoming excessively long. This will ensure easy access for users while maintaining a clean and organized layout.</li>
-            </ul>
             
         </div>
     </div>
@@ -230,5 +213,11 @@
     <script src="https://kit.fontawesome.com/41aa5acfee.js" crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="main.js"></script>
+    <script>
+        //PROBLEM SlideDown
+        $('.problem-list ul li').click(function (event) {
+            $(this).toggleClass('active');
+        });
+    </script>
 </body>
 </html>
