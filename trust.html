@@ -65,9 +65,9 @@
         </div>
         <div class="right-content mt-3 col-lg-8">
             <div class="opening">
-                <h4>I am the sole designer for this project and have been working closely with PM and engineers throughout the development process.</h4>
-                <h4>The objective of this project is to create an intuitive trust inquiry system, enabling customers to easily access information and replace paper-based processes.</h4>
-            <p>＊This website was originally written in Mandarin and has been translated into English for the purpose of this portfolio.</p>
+                <h5>I am the sole designer for this project and have been working closely with PM and engineers throughout the development process.</h4>
+                <h5>The objective of this project is to create an intuitive trust inquiry system, enabling customers to easily access information and replace paper-based processes.</h4>
+                <p class="mt-5">＊This website was originally written in Mandarin and has been translated into English for the purpose of this portfolio.</p>
             </div>
             
             <div class="three-circle row d-flex justify-content-center align-items-center mt-5">
@@ -75,14 +75,17 @@
                 <img class="col-lg-4 mb-3" src="/img/transf-dura.png" alt="">
                 <img class="col-lg-4 mb-3" src="/img/transf-tools.png" alt="">
             </div>
-            <img class="" src="/img/e+1_hero.png" alt="">
+            <img class="" src="/img/trust-hero.png" alt="">
             <div class="divider mt-5"></div>
-            <h3>Background</h3>
+
+
+            
+            <h3 class="my-4">Background</h3>
             <p>Although the current system already has a trust inquiry feature, it lacks a personal trust inquiry function. Therefore, in this version update, we have planned to <span class="emphesize">include a personal trust inquiry service</span> on the website to enhance the overall trust inquiry functionality.</p>
             <p class="mt-3 fs-6 fst-italic" >*<span class="text-decoration-underline">Personal Trust Inquiry:</span> This feature allows trust owners to inquire about the beneficiaries, inventory, transaction details, and other related information of their trusts.</p>
             <img src="./img/trust-basic flow.png" alt="">
 
-            <h3>Problems</h3>
+            <h3 class="my-4">Problems</h3>
             <div class="problem-list">
                 <ul class="problem-list-ul">
                     <!-- 1 -->
@@ -92,31 +95,26 @@
                     </li>
                     <!-- 2 -->
                     <li>
-                        <div class="problem-q">2. How to present the query options?</div>
-                        <div class="problem-a mt-2">Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively.</div>
+                        <div class="problem-q">2. How to express proprietary terms?</div>
+                        <div class="problem-a mt-2">In the banking industry, there are specific terms used for different types of trusts, such as "self-beneficiary trust" and "third-party beneficiary trust." The authentication process for these two types of trusts varies. It is important to address how to present these proprietary terms in a way that is easily understandable to users.</div>
                     </li>
                     <!-- 3 -->
                     <li>
-                        <div class="problem-q">3. How to express proprietary terms?</div>
-                        <div class="problem-a mt-2">In the banking industry, there are specific terms used for different types of trusts, such as "self-beneficiary trust" and "third-party beneficiary trust." The authentication process for these two types of trusts varies. it is important to address how to present these proprietary terms in a way that is easily understandable to users.</div>
+                        <div class="problem-q">3. What is the file upload process?</div>
+                        <div class="problem-a mt-2">One of the authentication steps involves file upload, but there are some details that need to be confirmed before the file can be uploaded. Therefore, the goal is to design an intuitive and simple process to ensure a smooth file upload experience.</div>
                     </li>
                     <!-- 4 -->
                     <li>
-                        <div class="problem-q">4. How to align with the existing paper statement?</div>
-                        <div class="problem-a mt-2">Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively</div>
-                    </li>
-                    <!-- 5 -->
-                    <li>
-                        <div class="problem-q">5. What is the file upload process?</div>
-                        <div class="problem-a mt-2">One of the authentication steps involves file upload, but there are some details that need to be confirmed before the file can be uploaded. Therefore, the goal is to design an intuitive and simple process to ensure a smooth file upload experience.</div>
+                        <div class="problem-q">4. How to present the query options?</div>
+                        <div class="problem-a mt-2">Product team proposes providing a wide range of query options. For a single trust, users can query four different sub-items: basic information, inventory details, transaction history, and statement download. To avoid a cluttered interface, careful planning is needed to organize these options effectively.</div>
                     </li>
                 </ul>    
             </div>
             
-            <h3>Solutions</h3>
+            <h3 class="my-4">Solutions</h3>
             <!-- SESSION 1 -->
             <div class="trust-solution">
-                <h5 class="mt-3 fw-semibold fst-italic">1. Clarify User Types to Identify Login Path</h5>
+                <h5 class="fw-bold mb-3 mt-5">1. Clarify User Types to Identify Login Path</h5>
                 <p>During the meeting, we quickly <span class="emphesize">identified five different login scenarios</span> and planned individual user flows based on these scenarios. We will then design subsequent screens based on these flows.</p>
                 <ol>
                     <li>Only Self-Benefit Trust</li>
@@ -125,57 +123,81 @@
                     <li>Both Self-Benefit Trust (verified) and Third-Party Benefit Trust (not verified)</li>
                     <li>Both Self-Benefit Trust (not verified) and Third-Party Benefit Trust (verified)</li>
                 </ol>
-                <img src="./img/trust-s1.png" alt="">
+                
+                <img src="./img/trust-s1.png" alt="" class="user-flow-img">
             </div>
 
              <!-- SESSION 2 -->
-             <div class="trust-solution">
-                <h5 class="mt-5 fw-semibold fst-italic">2. Layout of Query Options</h5>
-                <p>After successfully logging in, the design includes a two stage table to allow users to perform trust inquiry.</p>
-                <p class="mt-3 fw-semibold">Stage One</p>
+            <div class="trust-solution">
+                <h5 class="fw-bold">2. UX Writing of Self-benefit Request and Non-self-benefit Request </h5>
+                <p>As mentioned, we need to address the UX writing for self-benefit and non-self-benefit requests. We have chosen three versions and conducted internal testing, and it was found that using the most conversational tone is easier to understand.</p>
+                
+                <p class="mt-5 fw-semibold">> Terms we choose to do internal user testing</p>
+                <table class="mt-2">
+                    <tr>
+                        <th>Version</th>
+                        <th>Term 1</th>
+                        <th>Term 2</th>
+                        <th>Understanding rate</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Self-beneficial request</td>
+                        <td>Non-self-beneficial request</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trustor and beneficiary are the same individual.</td>
+                        <td>Trustor, beneficiary, and supervisor are different individuals.</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Only singular trustor, beneficiary.</td>
+                        <td>Multiple trustors, beneficiaries, supervisors.</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+                <p class="mt-5 fw-semibold">> Final design</p>
+                <img src="./img/trust-s2.png" alt="" class="mt-2">
+            </div>
+             <!-- SESSION 3 -->
+            <div class="trust-solution">
+                <h5 class="fw-bold">3. Document Upload Process Page</h5>
+                <p>The old process was entirely offline, but in this update, we aim to integrate it online.</p>
+                <!-- Before -->
+                <p class="mt-4 fw-semibold"> > Original Concept</p>
+                <p>Initially, the PM wanted to consolidate all the steps on a single page. However, during internal testing, it was found that <span class="emphesize">having everything on one page</span> made it <span class="emphesize">unclear</span> for users which steps to begin with and what their progress should be.</p>
+                <img class="mt-3" src="./img/trust-s3-old.png" alt="">
+                <!-- After -->
+                <p class="mt-5 fw-semibold"> > New Design</p>
+                <p>Therefore, the decision was made to <span class="emphesize">separate the steps and use a progress bar</span> to indicate the required completion steps.</p>
+                <video class="mt-4" controls>
+                    <source src="./img/trust-s3-new.mp4">
+                </video>
+            </div>
+            <!-- SESSION 4 -->
+            <div class="trust-solution">
+                <h5 class="fw-bold">4. Layout of Query Options</h5>
+                <p>After successfully logging in, the design includes a two-stages table to allow users to perform trust inquiry.</p>
+                <p class="mt-3 fw-semibold">> Stage One</p>
                 <ul>
                     <li>Users can overview all trust information.</li>
                     <li>Users can click on a specific trust to access more detailed information.</li>
                 </ul>
-                <!-- 第一階段的圖片 -->
-                <img src="" alt="">
-                <p class="mt-3 fw-semibold">Stage Two</p>
+                <p class="mt-3 fw-semibold">> Stage Two</p>
                 <ul>
                     <li>Upon clicking a trust, users are directed to the detail page.</li>
                     <li>Tab navigation is implemented to allow users to choose the desired inquiry category.</li>
                     <li>Users can also use the buttons at the bottom of each page to return to the overview page.</li>
                 </ul>
                 <!-- 第二階段的圖片 -->
-                <img src="" alt="">
+                <video class="mt-4" controls>
+                    <source src="./img/trust-s4.mp4">
+                </video>
             </div>
-
-             <!-- SESSION 3 -->
-             <div class="trust-solution">
-                <h5 class="mt-5 fw-semibold fst-italic">3. UX Writing of Self-benefit Request and Non-self-benefit Request </h5>
-                <p>As mentioned, we need to address the UX writing for self-benefit and non-self-benefit requests. We have chosen three versions and conducted internal testing, and it was found that using the most conversational tone is easier to understand.</p>
-                <!-- 放表格或圖片 -->
-            </div>
-
-            <!-- SESSION 4 -->
-            <div class="trust-solution">
-                <h5 class="mt-5 fw-semibold fst-italic">4. Consistent table presentation with the current paper statement</h5>
-                <p>As mentioned, we need to address the UX writing for self-benefit and non-self-benefit requests. We have chosen three versions and conducted internal testing, and it was found that using the most conversational tone is easier to understand.</p>
-                <!-- 放表對帳單節圖&網頁規劃的內容 -->
-            </div>
-
-             <!-- SESSION 5 -->
-             <div class="trust-solution">
-                <h5 class="mt-5 fw-semibold fst-italic">5. Document Upload Process Page</h5>
-                <p>The old process was entirely offline, but in this update, we aim to integrate it online.</p>
-                <!-- Before -->
-                <p class="mt-3 fw-semibold">Original Concept</p>
-                <p>Initially, the PM wanted to consolidate all the steps on a single page. However, during internal testing, it was found that <span class="emphesize">having everything on one page</span> made it <span class="emphesize">unclear</span> for users which steps to begin with and what their progress should be.</p>
-                <!-- 放原本的圖 要翻譯成英文 -->
-                <img src="" alt="">
-                <!-- After -->
-                <p class="mt-3 fw-semibold">New Design</p>
-                <p>Therefore, the decision was made to <span class="emphesize">separate the steps and use a progress bar</span> to indicate the required completion steps.</p>
-            </div>
+             
 
 
             <h3>Takeaways</h3>
