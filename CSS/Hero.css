@@ -1,10 +1,26 @@
-
+/* 
 .hero-section{
     height: 80vh;
-}
-.hero-section img{
+} */
+.hero-section .hero-pc{
     max-width: 1000px;
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.hero-section .hero-m{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .hero-section .hero-pc{
+        display: none;
+    }
+    .hero-section .hero-m{
+        display: block;
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+    }
 }

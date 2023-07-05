@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="CSS/Footer.css">
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/article.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap 5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Font awesome -->
@@ -30,7 +32,7 @@
 
 <body>
   <!-- NAV BAR -->
-    <nav class="nav-container d-flex justify-content-between align-items-end">
+    <nav class="nav-container d-flex justify-content-between align-items-center">
       <div class="nav-left mt-1 ms-2">
         <a href="/index.html"><img src="/img/portfolio-logo.png" alt="protfolio-logo"></a>
       </div>
@@ -52,7 +54,8 @@
 
   <!-- HERO SECTION -->
 <section class="hero-section">
-  <img src="./img/hero-pc.png" alt="">
+  <img class="hero-pc" src="./img/hero-pc.png" alt="">
+  <img class="hero-m" src="./img/hero-m.png" alt="">
 </section>
 
 
@@ -60,35 +63,37 @@
 
 <!-- MY WORK -->
 
-<section class="my-work">
+<section class="my-work" id="my-work">
   <!-- 1 -->
-  <div class="work-border b-border">
+  <div class="work-border b-border" data-aos="fade-up" data-aos-offset="400">
     <div class="work-wrapper">
       <div class="work-text">
         <p class="firm">@ E.SUN BANK</p>
-        <a href="./transfer.html"><h2>Online transfer campaign landing page</h2></a>
-        <p>This is a campaign aiming for enhancing the utility rate of digital money transfer function to reduce the number of in-person bank transactions.</p>
-      </div>
-      <div class="work-img">
-        <a href="./transfer.html"><img src="./img/e+1-kv-new.png" alt=""></a>
-      </div>
-    </div>
-  </div>
-  <!-- 2 -->
-  <div class="work-border b-border">
-    <div class="work-wrapper">
-      <div class="work-text">
-        <p class="firm">@ E.SUN BANK</p>
-        <a href="./trust.html"><h2>Trust Inquery Page</h2></a>
+        <a href="./trust.html"><h2>Trust Inquery Website</h2></a>
         <p>The objective of this project is to create an intuitive trust inquiry system, enabling customers to easily access information and replace paper-based processes.</p>
       </div>
       <div class="work-img">
-        <a href="./trust.html"><img src="./img/trust-kv-new.png" alt=""></a>
+        <a href="./trust.html" class="hvr-push"><img src="./img/trust-kv-new.png" alt=""></a>
       </div>
     </div>
   </div>
+  
+  <!-- 2 -->
+  <div class="work-border b-border" data-aos="fade-up" data-aos-offset="200"> 
+    <div class="work-wrapper">
+      <div class="work-text">
+        <p class="firm">@ E.SUN BANK</p>
+        <a href="./transfer.html"><h2>Online transfer campaign－landing page</h2></a>
+        <p>This is a campaign aiming for enhancing the utility rate of digital money transfer function to reduce the number of in-person bank transactions.</p>
+      </div>
+      <div class="work-img">
+        <a href="./transfer.html" class="hvr-push"><img src="./img/e+1-kv-new.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
   <!-- 3 -->
-  <div class="work-border b-border">
+  <div class="work-border b-border" data-aos="fade-up" data-aos-offset="200">
     <div class="work-wrapper">
       <div class="work-text">
         <p class="firm">@ Side Project</p>
@@ -96,7 +101,7 @@
         <p>Having the goal to design products, I also equipped myself with web development skills.  Having the goal to design products, I also equipped myself with web development skills. </p>
       </div>
       <div class="work-img">
-        <a href=""><img src="./img/product-img.png" alt=""></a>
+        <a href="./redesign-taipei-sports-app.html" class="hvr-push"><img src="./img/tsca-kv.png" alt=""></a>
       </div>
     </div>
   </div>  
@@ -132,5 +137,9 @@
   <script src="https://kit.fontawesome.com/41aa5acfee.js" crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

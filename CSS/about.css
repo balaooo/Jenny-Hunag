@@ -15,6 +15,8 @@ p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
 
 }
 
@@ -24,18 +26,18 @@ p {
     display: inline-block;   
 }
 
-.about-intro div{
+.about-intro-txt{
     padding-left: 60px;
     display: inline-block;
     max-width: 600px;
     width: 100%;
 }
 
-.about-intro div h2{
+.about-intro-txt h2{
     font-family: 'Yeseva One', cursive;
 }
 
-.about-intro div p{
+.about-intro-txt p{
     padding: 20px 0;
     font-size: 18px;
 }
@@ -74,6 +76,14 @@ p {
 /* ************************
             WORK
 ************************ */
+
+@media (min-width: 760px) and (max-width:1200px){
+    .section-wrap{
+        padding: 0 60px;
+    }
+}
+
+
 .section-wrap h2{
     font-family: 'Yeseva One', cursive;
     margin-bottom: 30px;
@@ -102,10 +112,15 @@ p {
     border: none;
     background-color: #85BFCD;
     width: 100%;
-    max-width: 100px;
+    max-width: 120px;
     border-radius: 30px;
     height: 100%;
     min-height: 54px;
+    padding: 0 20px;
+}
+
+.circle-border button:hover{
+    opacity: 0.7;
 }
 
 .circle-wrap{
@@ -127,7 +142,6 @@ p {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0;
     font-weight: 600;
-    margin-bottom: 8px;
     font-size: 18px;
 }
 
@@ -137,6 +151,10 @@ p {
 
 .orange-border{
     border-color: #F4B076 ;
+}
+
+.orange-button{
+    background-color: #F4B076 !important;
 }
 
 /* ************************

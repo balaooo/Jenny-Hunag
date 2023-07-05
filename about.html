@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="CSS/Footer.css">
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/article.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap 5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Font awesome -->
@@ -28,7 +30,7 @@
 </head>
 <body>
     <!-- ------NAV BAR start------ -->
-    <nav class="nav-container d-flex justify-content-between align-items-end">
+    <nav class="nav-container d-flex justify-content-between align-items-center">
         <div class="nav-left mt-1 ms-2">
         <a href="/index.html"><img src="./img/portfolio-logo.png" alt="protfolio-logo"></a>
         </div>
@@ -53,7 +55,7 @@
         <!-- ------INTRO start------ -->
         <section class="about-intro">
             <img src="./img/about-main.png" alt="about-main-photo">
-            <div>
+            <div class="about-intro-txt mt-5">
                 <h2>Hello, my name is Jenny :)</h2>
                 <p>Having a background in art and working in finance, I have the faith in creating products that are not only aesthetically pleasing but also intuitive. In addition, due to my museum experience, I hope that my work could have greater accessibility and help those in need.</p>
             </div>
@@ -61,20 +63,20 @@
         <!-- ------INTRO end------ -->
 
         <!-- ------STORY start------ -->
-        <section class="about-story mt-100px">
-            <h2>My Story</h2>
+        <section class="about-story mt-100px mx-2">
+            <h2 data-aos-offset="300" data-aos-offset="200">My Story</h2>
             <div class="story-block-wrap">
-                <div class="story-block">
+                <div class="story-block" data-aos="fade-up" data-aos-offset="200">
                     <img src="./img/arthistory.PNG" alt="">
                     <h5>Art History Student</h5>
                     <p>I’ve been a huge fan of museum, since I was a child. After growing up, I found that museums are places where knowledge can be enjoyed by people of all classes. That’s why I choose to pursue my master degree in Art History.</p>
                 </div>
-                <div class="story-block">
+                <div class="story-block" data-aos="fade-up" data-aos-offset="300">
                     <img src="./img/product.PNG" alt="">
                     <h5>Switch to Product</h5>
                     <p>While working as an intern at NPM and participating in the online curator contest, I found online platforms more efficient to share knowledge. However, the usability still needed improvement, so I delved into its UX.</p>
                 </div>
-                <div class="story-block">
+                <div class="story-block" data-aos="fade-up" data-aos-offset="400">
                     <img src="./img/bank.PNG" alt="">
                     <h5>Designer in Finance</h5>
                     <p>Having the goal to design products, I also equipped myself with web development skills. I had an open-choice when searching job, and now I work in a bank as a web designer.</p>
@@ -97,7 +99,7 @@
                             <p>2022 - Now</p>
                         </div>
                     </div>
-                    <!-- <button>view work</button> -->
+                    <a href="./trust.html"><button>work</button></a>
                 </div>
             </div>
             <div class="circle-border">
@@ -123,7 +125,6 @@
                             <p>2021</p>
                         </div>
                     </div>
-                    <button>view work</button>
                 </div>
             </div>
             <div class="circle-border">
@@ -136,7 +137,6 @@
                             <p>2020</p>
                         </div>
                     </div>
-                    <button>view work</button>
                 </div>
             </div>
         </section>
@@ -145,6 +145,19 @@
         <!-- ------EDU start------ -->
         <section class="section-wrap mt-100px">
             <h2>My Education Journey</h2>
+            <div class="circle-border orange-border">
+                <div class="circle-wrap">
+                    <div>
+                        <img src="./img/corsera-logo.png" alt="">
+                        <div class="circle-text">
+                            <h5>Google UX Design Certificate</h5>
+                            <p>@ Corsera</p>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                    <a href="./redesign-taipei-sports-app.html"><button class="orange-button">work</button></a>
+                </div>
+            </div>
             <div class="circle-border orange-border">
                 <div class="circle-wrap">
                     <div>
@@ -173,7 +186,7 @@
         <!-- ------EDU end------ -->
 
         <!-- ------CHAT start------ -->
-        <section class="about-chat">
+        <section class="about-chat mb-5" data-aos="fade-up" data-aos-offset="200">
             <h2>Interested in what I’m doing?</h2>
             <div class="chat-border-group">
                 <div class="chat-border mb-3">
@@ -202,7 +215,7 @@
     <!-- FOOTER -->
     <div class="footer">
         <div class="left-footer">
-            <p>© 2022 JENNY HUANG. All Rights Reserved.</p>
+            <p>© 2023 JENNY HUANG. All Rights Reserved.</p>
         </div>
         <div class="middle-footer">
             <div class="footer-link">
@@ -223,6 +236,10 @@
     <script src="https://kit.fontawesome.com/41aa5acfee.js" crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
