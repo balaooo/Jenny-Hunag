@@ -124,7 +124,7 @@
     /* Nav left in mobile */
     .nav-container{
         height: 60px;
-        background-color: #f3f3f3;
+        background-color: #e4e4e4;
         position: fixed;
         top: 0;
         left: 0;
@@ -146,7 +146,7 @@
     @media(min-width: 750.02px){
         .nav-container{
             height: 60px;
-            background-color: #f3f3f3;
+            background-color: #e4e4e4;
             position: fixed;
             top: 0;
             left: 0;

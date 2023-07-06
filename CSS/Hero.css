@@ -1,7 +1,7 @@
-/* 
+
 .hero-section{
-    height: 80vh;
-} */
+    position: relative;
+}
 .hero-section .hero-pc{
     max-width: 1000px;
     width: 90%;
@@ -22,5 +22,46 @@
         max-width: 800px;
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+
+/* ======= Enjoy ======== */
+
+.enjoy-anima{
+    position: absolute;
+    right: 16%;
+    bottom: -30px;
+    display: block;
+}
+.enjoy-anima svg{
+    max-width: 180px;
+    width: 100%;
+}
+
+@media screen and (max-width:805px) {
+    .enjoy-anima{
+        display: none;
+    }
+}
+
+#blue-circle{
+    animation: circle 3s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box ;
+}
+#orange-circle{
+    animation: circle 3.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box ;
+}
+
+
+@keyframes circle{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
     }
 }
